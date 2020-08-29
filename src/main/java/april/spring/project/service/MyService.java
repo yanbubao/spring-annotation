@@ -1,8 +1,9 @@
 package april.spring.project.service;
 
 import april.spring.project.dao.MyDao;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * @author yanzx
@@ -10,8 +11,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyService {
     //@Qualifier("dao")
-//    @Resource(name="dao")
-    @Autowired
+    @Resource
+    //@Autowired
     private MyDao myDao;
 
     public void print(){
