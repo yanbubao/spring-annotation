@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Import;
  * 2、实现 ImportSelector 自定义需要注入哪些bean！ 同时使用@Bean和ImportSelector会产生多个该类型的bean，Selector注的为全类名！
  * 3、实现 ImportBeanDefinitionRegistrar 自定义注入bean的逻辑！
  * 4、把需要注册bean封装为 FactoryBean！ BeanFactory负责从IOC中获取bean！FactoryBean是负责将bean注入到IOC的bean！
+ *    如果要获取到对应的FactoryBean对象，需要getBean(& + beanName)获取，spring源码就是这么实现的...
  *
  * @author yanzx
  */
