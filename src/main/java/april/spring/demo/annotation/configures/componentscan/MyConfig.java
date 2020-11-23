@@ -17,4 +17,5 @@ import org.springframework.context.annotation.FilterType;
         includeFilters = {@ComponentScan.Filter(type = FilterType.CUSTOM, value = MyTypeFilter.class)},
         useDefaultFilters = false)
 public class MyConfig {
+
 }
